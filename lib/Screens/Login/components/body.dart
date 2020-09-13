@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:uniclass/Screens/Login/components/background.dart';
 import 'package:uniclass/Screens/Login/components/password_input_field.dart';
 import 'package:uniclass/Screens/Login/components/rounded_input_field.dart';
+import 'package:uniclass/Screens/SignUp/sign_up_screen.dart';
 import 'package:uniclass/Screens/Welcome/components/rounded_button.dart';
 import 'package:uniclass/constants.dart';
 
@@ -30,19 +31,50 @@ class LoginBody extends StatelessWidget {
             ),
             RoundedInputField(
               icon: Icons.person,
-              onChanged: (value) {
-              },
+              onChanged: (value) {},
               hintText: "Your email",
             ),
             PasswordInputField(
               onChanged: (value) {},
               hintText: "Your Password",
             ),
+            SizedBox(
+              height: size.height * 0.02,
+            ),
             RoundedButton(
               text: "LOGIN",
               color: kPrimaryColor,
               textColor: kPrimaryLightColor,
               press: () {},
+            ),
+            SizedBox(
+              height: size.height * 0.02,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "Don't have an account? ",
+                  style: TextStyle(color: kPrimaryColor),
+                ),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) {
+                          return SignUp();
+                        },
+                      ),
+                    );
+                  },
+                  child: Text(
+                    "Sign up",
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold, color: kPrimaryColor),
+                  ),
+                )
+              ],
             )
           ],
         ),
