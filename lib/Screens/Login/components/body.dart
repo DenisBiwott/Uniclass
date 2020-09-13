@@ -31,7 +31,6 @@ class LoginBody extends StatelessWidget {
             RoundedInputField(
               icon: Icons.person,
               onChanged: (value) {
-                print("The email is $value");
               },
               hintText: "Your email",
             ),
