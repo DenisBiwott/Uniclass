@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "484895331401",
+    "firebase_url": "https://uniclass-e7760.firebaseio.com",
+    "project_id": "uniclass-e7760",
+    "storage_bucket": "uniclass-e7760.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:484895331401:android:68acfa3deaddb83bfb9b98",
+        "android_client_info": {
+          "package_name": "com.denis.uniclass"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "484895331401-2seb67lbr2olcvd3lg031ttrd9tcaa4b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAT6Sz7S8fHK7XOHBIY8kzrVJ3fTzWJOr0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "484895331401-2seb67lbr2olcvd3lg031ttrd9tcaa4b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
